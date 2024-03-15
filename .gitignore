@@ -1,6 +1,8 @@
 *.pyc
 *.pyd
 *.egg-info/
+*.txt
+*.log
 .vscode/
 output
 build
@@ -14,3 +16,4 @@ model/simple_phongsurf/3rdparty/
 model/smplx_utils/smplx_models/
 
 /pytorch3d/
+/data/

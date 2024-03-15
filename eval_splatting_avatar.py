@@ -26,6 +26,7 @@ if __name__ == '__main__':
     pipe = config.pipe
     gs_model = SplattingAvatarModel(config.model, verbose=True)
 
+
     ply_fn = os.path.join(args.pc_dir, 'point_cloud.ply')
     gs_model.load_ply(ply_fn)
     embed_fn = os.path.join(args.pc_dir, 'embedding.json')

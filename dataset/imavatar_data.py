@@ -70,6 +70,8 @@ class IMavatarDataset(torch.utils.data.Dataset):
     # load flame_params.json
     def load_flame_json(self):
         if not os.path.exists(os.path.join(self.dat_dir, 'flame_params.json')):
+            # print(os.path.join(self.dat_dir, 'flame_params.json'))
+            # exit()
             raise NotImplementedError
         
         with open(os.path.join(self.dat_dir, 'flame_params.json')) as fp:

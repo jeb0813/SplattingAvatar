@@ -13,6 +13,9 @@ from dataset.dataset_helper import make_frameset_data, make_dataloader
 from model import libcore
 
 if __name__ == '__main__':
+    import ipdb
+    ipdb.set_trace()
+
     parser = ArgumentParser(description='SplattingAvatar Training')
     parser.add_argument('--ip', type=str, default='127.0.0.1')
     parser.add_argument('--port', type=int, default=6009)
