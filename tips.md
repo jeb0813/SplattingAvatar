@@ -25,3 +25,14 @@ python eval_splatting_avatar.py --config configs/splatting_avatar.yaml --dat_dir
 \# for example:  
 python eval_splatting_avatar.py --config configs/splatting_avatar.yaml --dat_dir /path-to/bala/output-splatting/last_checkpoint  
 
+
+
+# Preprocessing
+使用的这个pipeline https://github.com/zhengyuf/IMavatar  
+
+首先使用 https://github.com/PeterL1n/RobustVideoMatting 对人物和背景进行分割  
+使用ffmpeg将视频保存为图片 
+ffmpeg -i ./output.mp4 -q:v 2  ./images/%d.png  
+然后使用DECA获得code.json，需要特别注意的是，DECA中的demo_reconstruct.py需要被覆写为IMavatar中的代码  
+
+通过 optimize.py 将 code.json 转换为flame_param.json

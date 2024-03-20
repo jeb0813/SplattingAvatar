@@ -1,0 +1,10 @@
+# a bash command
+# python demos/demo_reconstruct.py -i $video_folder/$subject_name/"${array[0]}"/image --savefolder $video_folder/$subject_name/"${array[0]}"/"deca" --saveCode True --saveVis False --sample_step 1  --render_orig False
+
+
+python ./DECA/demos/demo_reconstruct.py -i /data/chenziang/codes/SplattingAvatar/data/_biden/images --savefolder /data/chenziang/codes/SplattingAvatar/data/_biden/deca --saveCode True --saveVis False --sample_step 1  --render_orig False
+
+
+python ./DECA/demos/demo_reconstruct.py -i /data/chenziang/codes/SplattingAvatar/data/_yufeng/images --savefolder /data/chenziang/codes/SplattingAvatar/data/_yufeng/deca --saveCode True --saveVis False --sample_step 1  --render_orig False
+
+python optimize.py --path /data/chenziang/codes/SplattingAvatar/data/_yufeng/video.mp4 --cx 261.442628 --cy 253.231895 --fx 1539.67462 --fy 1508.93280 --size 512
