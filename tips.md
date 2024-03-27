@@ -92,3 +92,16 @@ v2版本预处理，将分割换为原始图像
 ffmpeg -framerate 25 -i ./render/%05d.png -c:v libx264 -r 25 -pix_fmt yuv420p output_video.mp4
 
 ls -l ./ | grep "^-" | wc -l  
+
+作者给的预训练文件的结果  
+psnr_avg: 28.61068330819266   
+ssim_avg: 0.9370488937411989  
+lpips_avg: 0.0569037944365825  
+n_gauss_avg: 309687.6  
+
+
+自己train的结果  
+psnr_avg: 25.584101701216262  
+ssim_avg: 0.9157033726302061  
+lpips_avg: 0.1232667076336099  
+n_gauss_avg: 226540.45454545456  
